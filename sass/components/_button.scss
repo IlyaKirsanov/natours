@@ -38,6 +38,16 @@
 		}
   }
 
+  &--green {
+    background: $color-primary;
+		color: $color-grey-light-1;
+
+		&::after {
+			background: $color-primary;
+	
+		}
+  }
+
   &::after {
     content: "";
     display: inline-block;
