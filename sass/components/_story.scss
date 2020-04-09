@@ -2,7 +2,7 @@
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color: $color-black, $alpha: 0.1);
-  background-color: $color-white;
+  background-color: rgba($color: $color-white, $alpha: 0.6);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -19,8 +19,7 @@
     width: 15rem;
     height: 15rem;
     float: left;
-    background-color: coral;
-
+    
     shape-outside: circle(50% at 50% 50%);
     -webkit-shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
