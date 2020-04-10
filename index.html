@@ -8,7 +8,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
   <link rel="stylesheet" href="css/icon-font.css">
-  <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
   <title>Natours | Exciting tours for adventurous people</title>
@@ -76,9 +77,31 @@
         <!-- ! Images composition -->
         <div class="col-1-of-2">
           <div class="composition">
-            <img src="img/nat-1-large.jpg" alt="photo 1" class="composition__photo composition__photo--p1">
+
+            <img 
+            srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" 
+            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
+            alt="photo-1" 
+            class="composition__photo composition__photo--p1" 
+            src="img/nat-1-large.jpg">
+
+            <img 
+            srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" 
+            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
+            alt="photo-2" 
+            class="composition__photo composition__photo--p2" 
+            src="img/nat-2-large.jpg">
+
+            <img 
+            srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" 
+            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
+            alt="photo-3" 
+            class="composition__photo composition__photo--p3" 
+            src="img/nat-3-large.jpg">
+
+            <!-- <img src="img/nat-1-large.jpg" alt="photo 1" class="composition__photo composition__photo--p1">
             <img src="img/nat-2-large.jpg" alt="photo 2" class="composition__photo composition__photo--p2">
-            <img src="img/nat-3-large.jpg" alt="photo 3" class="composition__photo composition__photo--p3">
+            <img src="img/nat-3-large.jpg" alt="photo 3" class="composition__photo composition__photo--p3"> -->
           </div>
         </div>
       </div>
@@ -356,7 +379,12 @@
 
   <footer class="footer">
     <div class="footer__logo-box">
-      <img src="img/logo-green-2x.png" alt="logo green" class="footer__logo">
+
+      <picture class="footer__logo">
+        <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width:37.5em)">
+        <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="logo green" src="img/logo-green-2x.png">
+      </picture>
+      <!-- <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="logo green" class="footer__logo"> -->
     </div>
     <div class="row">
       <div class="col-1-of-2">
@@ -390,7 +418,11 @@
         <a href="#section-tours" class="popup__close">&times;</a>
         <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
         <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read this terms before booking</h3>
-        <p class="popup__text u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reprehenderit exercitationem dolor sint quo consectetur excepturi architecto sapiente? Tempore harum modi doloremque temporibus, iste fugiat deleniti incidunt molestias magni labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reprehenderit exercitationem dolor sint quo consectetur excepturi architecto sapiente? Tempore harum modi doloremque temporibus, iste fugiat deleniti incidunt molestias magni labore.</p>
+        <p class="popup__text u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+          reprehenderit exercitationem dolor sint quo consectetur excepturi architecto sapiente? Tempore harum modi
+          doloremque temporibus, iste fugiat deleniti incidunt molestias magni labore. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Eum reprehenderit exercitationem dolor sint quo consectetur excepturi architecto
+          sapiente? Tempore harum modi doloremque temporibus, iste fugiat deleniti incidunt molestias magni labore.</p>
         <a href="#" class="btn btn--green">Book now</a>
       </div>
     </div>
